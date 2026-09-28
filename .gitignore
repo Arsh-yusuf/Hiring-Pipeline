@@ -1,0 +1,52 @@
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+*.env
+secrets.json
+credentials.json
+*.pem
+*.key
+*.secret
+
+# Dependencies & Build Outputs
+node_modules/
+dist/
+build/
+coverage/
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python Cache & Databases
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.sqlite
+
+# Test Coverage & Logs
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+logs/
+
+# IDE & OS System Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Documentation drafts & specs
+folder-structure.md
+project-requirements.md
+verification.md
+workflow.md
+instructions.md
