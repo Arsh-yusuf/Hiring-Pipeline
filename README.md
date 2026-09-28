@@ -164,8 +164,8 @@ See [`docs/architecture_summary.md`](docs/architecture_summary.md) for detailed 
    
    This starts PostgreSQL on port 5432 with:
    - Database: `hiring_pipeline`
-   - User: `Your name`
-   - Password: `Your password`
+   - User: `Your postgres username`
+   - Password: `Your postgres password`
 
 3. **Set up Backend**
    ```bash
