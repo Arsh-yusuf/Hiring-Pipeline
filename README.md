@@ -164,8 +164,8 @@ See [`docs/architecture_summary.md`](docs/architecture_summary.md) for detailed 
    
    This starts PostgreSQL on port 5432 with:
    - Database: `hiring_pipeline`
-   - User: `postgres`
-   - Password: `postgres`
+   - User: `Your name`
+   - Password: `Your password`
 
 3. **Set up Backend**
    ```bash
@@ -206,9 +206,9 @@ See [`docs/architecture_summary.md`](docs/architecture_summary.md) for detailed 
 Copy `.env.example` to `.env` and configure:
 
 ```env
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/hiring_pipeline
-BACKEND_HOST=0.0.0.0
-BACKEND_PORT=8000
+DATABASE_URL=Your DB URL
+BACKEND_HOST=Your Host
+BACKEND_PORT=Your Port
 ```
 
 ---
@@ -692,9 +692,6 @@ MIT License - see LICENSE file for details
 ## Documentation
 
 - **Architecture**: [`docs/architecture_summary.md`](docs/architecture_summary.md)
-- **Requirements**: [`docs/project-requirements.md`](docs/project-requirements.md)
-- **Workflow**: [`docs/workflow.md`](docs/workflow.md)
-- **Verification**: [`docs/verification.md`](docs/verification.md)
 - **AI Development Logs**: [`docs/ai/`](docs/ai/)
 - **AI Disagreement**: [`docs/ai/disagreement.md`](docs/ai/disagreement.md)
 
