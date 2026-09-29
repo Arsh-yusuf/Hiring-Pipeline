@@ -233,8 +233,8 @@ User Query → Parser → Validator → SQL Compiler → PostgreSQL → Ranker �
 
 | Query Type | Example | Implementation |
 |------------|---------|----------------|
-| **Name search** | `Find Priya Sharma` | Trigram similarity + ILIKE |
-| **Fuzzy name** | `sharam` | PostgreSQL `pg_trgm` extension |
+| **Name search** | `Find Priya Sharma` | Substring match + token ratio ranking |
+| **Fuzzy name** | `sharam` | Token SequenceMatcher (0.83 score) & `pg_trgm` GIN similarity |
 | **Current stage** | `Who is in Interview?` | Filter by `current_stage` |
 | **Duration** | `In Screening > 1 week` | Date arithmetic on `stage_entered_at` |
 | **History** | `Moved to Interview since Monday` | Subquery on `candidate_history` |

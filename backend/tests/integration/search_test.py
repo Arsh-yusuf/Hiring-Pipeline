@@ -43,3 +43,14 @@ def test_search_by_stage(db_session):
     
     result = search_candidates(db_session, "Who is in Screening")
     assert len(result["results"]) == 1
+
+
+def test_search_fuzzy_name_typo(db_session):
+    service = CandidateService(db_session)
+    service.create_candidate("Priya Sharma")
+    db_session.commit()
+    db_session.expire_all()
+    
+    result = search_candidates(db_session, "sharam")
+    assert len(result["results"]) >= 1
+    assert result["results"][0]["name"] == "Priya Sharma"
